@@ -25,11 +25,12 @@ int main (){
 	int contador = 0;
 	string nomeArquivo, palavraProcurada, palavraLida;
 	
-	cin >> nomeArquivo >> palavraProcurada;
+	cin >> /*nomeArquivo >> */palavraProcurada;
 	
-	ifstream entrada (nomeArquivo);
+	ifstream entrada ("entrada.txt");
 	
 	while (entrada >> palavraLida){
+		cout << palavraLida << " ";
 		if (palavraLida==palavraProcurada){
 			contador++;	
 		}
